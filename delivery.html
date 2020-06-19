@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Pedido</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="delivery-body">
+    <section class="top">
+        <nav class="navigator">
+            <a href="index.html">
+                <img src="img/logo.jpg" class="logo-nav" alt="logo">
+            </a>  
+            <ul>
+                <li><a href="drink.html">Bebidas</a></li>
+                <li><a href="eat.html">Antojos</a></li>
+                <li><a href="delivery.html" style="border-bottom: dotted 2px rgb(160,82,45);">Haz tu pedido</a></li>
+            </ul>
+        </nav>
+        <video loop autoplay muted class="video-page" src="video/delivery.mp4"></video>
+        <div class="overlay-page">
+            <h1>PIDE EL TUYO</h1>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="form">
+            <form action="pedido.html">
+                <h2>Déjanos tus datos y recoge en la tienda</h2>
+                <input type="text" name="Nombre o Nickname" placeholder="Nombre o Nickname" id="nombre">
+                <input type="tel" name="telefono" id="phone" placeholder="Teléfono">
+                <input type="text" name="Productos" id="producto" placeholder="Productos">
+                <input type="text" name="Aclaraciones" id="notas" placeholder="Aclaraciones">
+                <select name="tienda" id="store">
+                    <option>Sede Norte</option>
+                    <option>Sede Occidente</option>
+                </select>
+                <input type="submit" value="Hacer Pedido" id="button">
+            </form>
+        </div>
+        <div class="contact">
+            <h2>... O contáctanos directamente</h2>
+            <p class="phones">Teléfono: 4592000 - Celular:305678910</p>
+            <h4>Nuestras Sedes</h4>
+             <div class="sedes">
+               <div class="sede animate__animated animate__pulse animate__infinite animate__slower">
+                    <img class="sede1" src="img/store3.jpg" alt="Sede 1">
+                    <span class="sede-overlay">
+                        <p>
+                            <span class="sedetext">SEDE NORTE</span>
+                            <span class="sedetext">Autopista Norte Calle 102</span>
+                        </p>
+                    </span>
+               </div>
+               <div class="sede animate__animated animate__pulse animate__infinite animate__slower">
+                <img class="sede2" src="img/store2.jpg" alt="Sede 2">
+                <span class="sede-overlay">
+                    <p>
+                        <span class="sedetext">SEDE OCCIDENTE</span>
+                        <span class="sedetext">Avenida Calle 24 #68</span>
+                    </p>
+                </span>
+                 </div>
+             </div>
+        </div>
+    </section>
+</body>
+</html>
