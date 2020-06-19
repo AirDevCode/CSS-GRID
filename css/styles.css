@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+}
+.drink-body{
+    background: linear-gradient(to right, rgba(243,226,199,1) 0%, rgba(182,141,76,1) 51%, rgba(193,158,103,1) 51%, rgba(233,212,179,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3', GradientType=1 );    
+}
+.eat-body{
+    background: linear-gradient(to right, rgba(171,169,171,1) 0%, rgba(153,141,153,1) 51%, rgba(171,169,171,1) 51%, rgba(171,169,171,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aba9ab', endColorstr='#aba9ab', GradientType=1 );
+}
+.overlay h1{
+    grid-column: 1/4;
+    font-family: 'Sriracha', cursive;
+    font-weight: bold;
+    font-size:5rem;
+    background-color: rgba(69, 41, 35,0.5);
+    padding: 4.1rem;
+}
+.main{
+    width: 100%;
+}
+.logo{
+    width: 125px;
+    object-fit: cover;
+}
+.index-nav{
+grid-column: 2/3;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+background-color: #ffffff;
+width: 100%;
+padding:0.5rem 2rem 0.5rem 1rem;
+border-radius: 10px 10px 0 0;
+border-style: solid;
+border-color:rgba(69, 41, 35,1) ;
+border: inset, 9px, 9px, 0, 9px;
+}
+.index-nav ul{
+    display: flex;
+    list-style: none;
+}
+.index-nav li{
+    padding-right: 1.2rem;
+    padding-left: 1rem;
+}
+.index-nav ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(160,82,45);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.4rem;
+}
+
+.index-nav ul li a:hover{
+    text-decoration: underline dotted;
+}
+
+video{
+    object-fit: cover;
+    width:100%;
+    height:100vh;
+    filter: grayscale(30%);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(69, 41, 35,0.2);
+    display: grid;
+    grid-template-columns: 1fr 680px 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+/*BEBIDAS Y COMIDAS*/
+.navigator{
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:1rem;
+    position: fixed;
+    -webkit-box-shadow: 2px 15px 16px -10px rgba(33,11,15,1);
+    -moz-box-shadow: 2px 15px 16px -10px rgba(33,11,15,1);
+    box-shadow: 2px 15px 16px -10px rgba(33,11,15,1);
+    z-index: 1000;
+}
+.logo-nav{
+    width: 100px;
+   height: 90px;
+   margin-bottom: 1rem;
+}
+.navigator ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-right: 1rem;
+}
+.navigator li{
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+.navigator ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(160,82,45);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.5rem;
+}
+.navigator ul li a:hover{
+    text-decoration: underline dotted;
+}
+.video-page{
+    object-fit: cover;
+    width:100%;
+    height:60vh;
+    filter: grayscale(40%);
+    -webkit-box-shadow: 1px 5px 16px 5px rgba(33,11,15,1);
+    -moz-box-shadow: 1px 5px 16px 5px rgba(33,11,15,1);
+    box-shadow: 1px 5px 16px 5px rgba(33,11,15,1);
+}
+.overlay-page{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(69, 41, 35,0.5);
+    display: grid;
+    grid-template-columns: 1fr 680px 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+    height: 60vh;
+}
+.overlay-page h1{
+    grid-column: 1/4;
+    font-family: 'Sriracha', cursive;
+    font-weight: bold;
+    font-size:4rem;
+    padding: 2rem;
+}
+
+.drinks{
+    display: flex;
+}
+
+.menu{
+    row-gap: 1.2rem;
+    width: 100%;
+    padding-top: 2rem;
+    margin:2rem ;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 20px 150px 20px 150px 20px 150px; 
+    justify-content: flex-start;
+    color: #4f2222;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+    align-items: center;
+}
+.images{
+    border: solid 1px #4f2222;
+    border-radius: 20px;
+}
+
+.header1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+.images:hover{
+    cursor: pointer;
+    width: 200px;
+}
+.image1{
+    width: 190px;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.dots1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 1rem;
+}
+.price1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
+.header2{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+}
+.image2{
+    width: 190px;
+    height: 140px;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.dots2{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding-left: 1rem;
+}
+.price2{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.header3{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    text-align: center;
+}
+.image3{
+    width: 190px;
+    height: 140px;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.dots3{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    padding-left: 1rem;
+}
+.price3{
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+/*DELIVERY*/
+
+.delivery-body{
+    background: linear-gradient(to right, rgba(235,230,235,1) 0%, rgba(235,230,235,1) 34%, rgba(235,230,235,1) 47%, rgba(171,169,171,1) 52%, rgba(235,230,235,1) 57%, rgba(235,230,235,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe6eb', endColorstr='#ebe6eb', GradientType=1 );
+}
+.delivery{
+    display: flex;
+}
+.form{
+    width: 50%;
+    padding:1rem 0 0 1rem ;
+    box-sizing: border-box;
+}
+form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    row-gap: 1rem;
+}
+form h2{
+    color: #4f2222;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2rem;
+    text-align: center;
+    grid-column: 1/5;
+}
+#button{
+    grid-column: 2/3;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: uppercase;
+    padding:1rem;
+    background-color: rgb(160,82,45);
+    color:#ffffff;
+    border-radius: 20px;    
+    border:none;    
+    -webkit-box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+}
+#button:hover{
+    cursor: pointer;
+}
+
+#nombre,#producto,#notas,#phone,#store{
+    grid-column: 1/5;
+    border-radius: 15px;
+    background-color:rgba(240, 228, 228,1);
+    border:solid 2px #4f2222;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: uppercase;
+    color:#4f2222;
+}
+#store{
+    height: 30px;
+}
+#nombre,#phone{
+    height: 40px;
+}
+#producto{
+    height: 80px;
+}
+#notas{
+    height: 100px;
+}
+.contact{
+    padding:1rem 0 0 1rem ;
+    box-sizing: border-box;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+}
+.contact h2{
+    margin-bottom:0.5rem ;
+    color: #4f2222;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2rem;
+    text-align: center;
+    grid-column: 1/5;
+}
+.contact h4{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.5rem;
+    grid-column: 1/5;
+    text-align: center;
+    color: #4f2222;  
+    margin-top: 1.2rem !important;
+    margin-bottom: 1rem !important;
+}
+.phones{
+    grid-column: 1/5;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(160,82,45);
+    font-size: 1.5rem;
+    }
+.sedes{
+    width: 100%;
+    grid-column: 1/5;
+    margin-bottom: 1rem;
+}
+.sede {
+    position: relative;
+    width: 90%;
+    height: 260px;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+.sedes img{
+    border: solid 2px rgb(160,82,45) ;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.sede:hover .sede-overlay{
+    display: flex;
+    cursor: pointer;
+}
+.sede-overlay{
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-align: center;
+}
+.sedetext{
+    font-family: 'Balsamiq Sans', cursive;
+    color:#ffffff;
+    font-size: 1.5rem;
+    display: block;
+}
